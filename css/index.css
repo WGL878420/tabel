@@ -1,0 +1,180 @@
+body,
+p {   
+	margin: 0;
+}
+ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg2.jpg) no-repeat center center;
+	background-size: cover;
+}
+#pathList {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	margin-top: 10px;
+	padding: 10px;
+}
+#pathList a {
+	color: #000;
+	text-decoration: none;
+}
+#pathList #paths {
+	display: inline-block;
+	vertical-align: top;
+}
+#pathList #paths li{
+	float:left;
+}
+#contextmenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 120px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font: 14px/30px "宋体";
+	color: #000;
+	background: #fff;
+	display: none;
+	z-index: 999;
+}
+#contextmenu li {
+	position: relative;
+	border-bottom:1px solid #eee;
+	border: 1px solid transparent;
+	text-indent: 1em;
+}
+#contextmenu li.hover {
+	border: 1px solid #ccc;
+}
+#contextmenu li ul {
+	position: absolute;
+	top: 0;
+	left: 120px;
+	width: 120px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font: 14px/30px "宋体";
+	color: #000;
+	background: #fff;
+	display: none;
+}
+#list {
+	position: fixed;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	height: 100%;
+}
+#list li {
+	position:absolute;
+	left: 0;
+	top: 0;
+	width: 89px;
+	height: 89px;
+	margin: 10px;
+	border: 1px solid transparent;
+	background-image: url(../images/file.png);
+}
+#list li:hover {
+	border: 1px solid #ccc;
+}
+#list li.active {
+	border: 1px solid #000;
+}
+#list p {
+	width: 100%;
+	margin-top: 70px;
+	text-align: center;
+	font: 12px "宋体";
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#list .folder {
+	background-position: 10px 6px;
+}
+#list .txt {
+	background-position: -100px -223px;
+}
+#list .html {
+	background-position: -898px -908px;
+}
+#list .img {
+	background: url(../images/img.png) no-repeat center 9px;
+}
+#list .video {
+	background: url(../images/video.png) no-repeat center 9px;
+}
+#list .audio {
+	background: url(../images/audio.png) no-repeat center 9px;
+}
+#list .qq {
+	background: url(../images/qq.png) no-repeat center 9px;
+}
+#list .wx {
+	background: url(../images/wx.png) no-repeat center 9px;
+}
+#list .sb {
+	background: url(../images/sb.png) no-repeat center 9px;
+}
+#list .google {
+	background: url(../images/google.png) no-repeat center 9px;
+}
+#list .Internet {
+	background: url(../images/Internet.png) no-repeat center 9px;
+}
+#list .pc {
+	background: url(../images/pc.png) no-repeat center 9px;
+}
+#list .trash {
+	background: url(../images/trash.png) no-repeat center 9px;
+}
+#openUI {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	z-index: 1000;
+	text-align: center;
+}
+#openUI #clos {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	text-align: center;
+}
+#openUI #clos a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font: 18px/20px "宋体";
+}
+#upload {
+	display: none;
+}
+.frame {
+	position: fixed;
+	left: 0;
+	top: 0;
+	border: 1px dotted #ccc;
+	background: rgba(0, 0, 255, .1);
+	box-sizing: border-box;
+}
